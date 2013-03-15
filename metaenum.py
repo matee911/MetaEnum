@@ -27,7 +27,7 @@ class MetaEnumType(type):
         def _get_verbose(cls,v):
             try:
                 return reverse_verbose[v]
-            except KeyError, e:
+            except KeyError as e:
                 raise Exception('KeyError: MetaEnum "%s" has no value "%s"!'%(cls.__name__, v) )
 
         get_verbose = classmethod( _get_verbose )
