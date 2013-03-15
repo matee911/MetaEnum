@@ -1,3 +1,6 @@
+Works with Python 2 and 3 :)
+
+
 example of use:
 
 class FOO(MetaEnum):
