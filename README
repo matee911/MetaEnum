@@ -3,10 +3,10 @@ Works with Python 2 and 3 :)
 
 example of use:
 
-class FOO(MetaEnum):
-    BAZ = (0, 'bazik')
-    BAR = 1
-
+>>> from metaenum import MetaEnum
+>>> class FOO(MetaEnum):
+...     BAZ = (0, 'bazik')
+...     BAR = 1
 >>> FOO.BAZ
 0
 >>> FOO.BAR
@@ -21,7 +21,6 @@ class FOO(MetaEnum):
 None
 >>> FOO.as_choices()
 [(0, 'bazik'), (1, None)]
-
 >>> FOO.by_name('BAZ')
 0
 >>> FOO.by_verbose('bazik')
