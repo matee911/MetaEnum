@@ -6,7 +6,7 @@ from distutils.core import setup
 setup(name='MetaEnum',
       description='',
       keywords='',
-      version='1.0',
+      version='1.1',
       license='MIT',
       url='http://github.com/matee911/MetaEnum', # home page for the package
       download_url='http://github.com/matee911/MetaEnum/downloads',
@@ -14,11 +14,11 @@ setup(name='MetaEnum',
       maintainer_email='matee@matee.net',
       long_description='''
       example of use:
-
-      class FOO(MetaEnum):
-          BAZ = (0, 'bazik')
-          BAR = 1
-
+      
+      >>> from metaenum import MetaEnum
+      >>> class FOO(MetaEnum):
+      ...     BAZ = (0, 'bazik')
+      ...     BAR = 1
       >>> FOO.BAZ
       0
       >>> FOO.BAR
@@ -33,7 +33,6 @@ setup(name='MetaEnum',
       None
       >>> FOO.as_choices()
       [(0, 'bazik'), (1, None)]
-
       >>> FOO.by_name('BAZ')
       0
       >>> FOO.by_verbose('bazik')
