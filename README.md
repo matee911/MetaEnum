@@ -1,8 +1,15 @@
+MetaEnum
+========
+
+Better constants and enumerations.
+
 Works with Python 2 and 3 :)
 
+![PyPi Version](https://pypip.in/v/MetaEnum/badge.png) ![Downloads](https://pypip.in/d/MetaEnum/badge.png)
 
-example of use:
-
+Usage
+=====
+```python
 >>> from metaenum import MetaEnum
 >>> class FOO(MetaEnum):
 ...     BAZ = (0, 'bazik')
@@ -25,3 +32,5 @@ None
 0
 >>> FOO.by_verbose('bazik')
 1
+```
+
